@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+* {
+    margin: 0;
+}
+
+.hero-container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-image: url('./nubelson-fernandes-iE71-TMrrkE-unsplash\ \(1\).jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 10px;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    color: #fff;
+    font-size: 60px;
+}
+
+nav {
+    width: 50%;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 700px;
+   
+}
+
+li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 21px;
+    color: #fff;
+    cursor: pointer;
+}
+
+li:hover {
+    color: #D870DB;
+}
+
+.arrows {
+    width: 60px;
+    height: 172px;
+    bottom: 20px;
+}
+
+.arrows path {
+    stroke: #fff;
+    fill: transparent;
+    stroke-width: 1px;
+    animation: arrow 2s infinite;
+    -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+    animation-delay:  -1s;
+    -webkit-animation-delay:  -1s;
+}
+
+.arrows path.a2 {
+    animation-delay:  -0.5s;
+    -webkit-animation-delay:  -0.5s;
+}
+
+.arrows path.a3 {
+    animation-delay:  -0s;
+    -webkit-animation-delay:  -0s;
+}
+
+.content-container {
+    height: 100vh;
+}
+
+.profile-container{
+    height: 100%;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-content {
+    width: 30%;
+}
+
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.profile-image {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    border: 8px solid blue;
+}
+
+.name-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 25px; 
+    margin-top: 15px;
+}
+
+.profile-text {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    margin-top: 15px; 
+}
+
+.profile-button {
+    height: 50px;
+    width: 170px;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 15px;
+    font-size: 15px;
+    border-radius: 20px;
+    background-color: blue;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+.profile-button:hover {
+    background-color: aqua;
+    color: red;
+}
+
+.divider {
+    width: 100%;
+    border-top: 3px solid black;
+    margin: 30px 0;
+}
+
+.icons-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.icon-item {
+    width: 80px;
+    height: auto;
+}
